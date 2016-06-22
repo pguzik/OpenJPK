@@ -1,4 +1,4 @@
-package pl.pguzik.jpk.api;
+package pl.pguzik.jpk.api.erp;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
