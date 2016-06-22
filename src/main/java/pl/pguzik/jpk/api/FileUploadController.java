@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @Controller
 public class FileUploadController {
 
-    private static final String UPLOAD_PATH = "/uploadPath";
+    private static final String UPLOAD_PATH = "/erp/uploadFiles";
 
     @RequestMapping(method = RequestMethod.GET, value = UPLOAD_PATH)
     public String provideUploadInfo(Model model) {
@@ -68,7 +68,7 @@ public class FileUploadController {
                     "You failed to upload " + name + " because the file was empty");
         }
 
-        return "redirect:/";
+        return "redirect:/erp/uploadFiles";
     }
 
 }
