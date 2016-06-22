@@ -1,0 +1,100 @@
+<ns:JPK xmlns:ns="http://jpk.mf.gov.pl/wzor/2016/03/09/03091/" xmlns:def="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2016/01/25/eD/DefinicjeTypy/">
+  <ns:Naglowek>
+    <ns:KodFormularza kodSystemowy="JPK_KR (1)" wersjaSchemy="1-0">JPK_KR</ns:KodFormularza>
+    <ns:WariantFormularza>1</ns:WariantFormularza>
+    <ns:CelZlozenia>1</ns:CelZlozenia>
+    <ns:DataWytworzeniaJPK>2014-09-19T01:18:33</ns:DataWytworzeniaJPK>
+    <ns:DataOd>1900-01-01</ns:DataOd>
+    <ns:DataDo>1900-01-01</ns:DataDo>
+    <ns:DomyslnyKodWaluty>GWP</ns:DomyslnyKodWaluty>
+    <ns:KodUrzedu>0608</ns:KodUrzedu>
+  </ns:Naglowek>
+  <ns:Podmiot1>
+    <ns:IdentyfikatorPodmiotu>
+      <def:NIP>1234563218</def:NIP>
+      <def:PelnaNazwa>token</def:PelnaNazwa>
+      <!--Optional:-->
+      <def:REGON>23511332857188</def:REGON>
+    </ns:IdentyfikatorPodmiotu>
+    <ns:AdresPodmiotu>
+      <def:KodKraju>PL</def:KodKraju>
+      <def:Wojewodztwo>token</def:Wojewodztwo>
+      <def:Powiat>token</def:Powiat>
+      <def:Gmina>token</def:Gmina>
+      <!--Optional:-->
+      <def:Ulica>token</def:Ulica>
+      <def:NrDomu>token</def:NrDomu>
+      <!--Optional:-->
+      <def:NrLokalu>token</def:NrLokalu>
+      <def:Miejscowosc>token</def:Miejscowosc>
+      <def:KodPocztowy>token</def:KodPocztowy>
+      <def:Poczta>token</def:Poczta>
+    </ns:AdresPodmiotu>
+  </ns:Podmiot1>
+  <!--1 or more repetitions:-->
+  <ns:ZOiS typ="G">
+    <ns:KodKonta>token</ns:KodKonta>
+    <ns:OpisKonta>token</ns:OpisKonta>
+    <ns:TypKonta>token</ns:TypKonta>
+    <ns:KodZespolu>token</ns:KodZespolu>
+    <ns:OpisZespolu>token</ns:OpisZespolu>
+    <ns:KodKategorii>token</ns:KodKategorii>
+    <ns:OpisKategorii>token</ns:OpisKategorii>
+    <!--Optional:-->
+    <ns:KodPodkategorii>token</ns:KodPodkategorii>
+    <!--Optional:-->
+    <ns:OpisPodkategorii>token</ns:OpisPodkategorii>
+    <ns:BilansOtwarciaWinien>1000.00</ns:BilansOtwarciaWinien>
+    <ns:BilansOtwarciaMa>1000.00</ns:BilansOtwarciaMa>
+    <ns:ObrotyWinien>1000.00</ns:ObrotyWinien>
+    <ns:ObrotyMa>1000.00</ns:ObrotyMa>
+    <ns:ObrotyWinienNarast>1000.00</ns:ObrotyWinienNarast>
+    <ns:ObrotyMaNarast>1000.00</ns:ObrotyMaNarast>
+    <ns:SaldoWinien>1000.00</ns:SaldoWinien>
+    <ns:SaldoMa>1000.00</ns:SaldoMa>
+  </ns:ZOiS>
+  <!--1 or more repetitions:-->
+  <ns:Dziennik typ="G">
+    <ns:LpZapisuDziennika>200</ns:LpZapisuDziennika>
+    <ns:NrZapisuDziennika>token</ns:NrZapisuDziennika>
+    <ns:OpisDziennika>token</ns:OpisDziennika>
+    <ns:NrDowoduKsiegowego>token</ns:NrDowoduKsiegowego>
+    <ns:RodzajDowodu>token</ns:RodzajDowodu>
+    <ns:DataOperacji>1900-01-01</ns:DataOperacji>
+    <ns:DataDowodu>1900-01-01</ns:DataDowodu>
+    <ns:DataKsiegowania>1900-01-01</ns:DataKsiegowania>
+    <ns:KodOperatora>token</ns:KodOperatora>
+    <ns:OpisOperacji>token</ns:OpisOperacji>
+    <ns:DziennikKwotaOperacji>1000.00</ns:DziennikKwotaOperacji>
+  </ns:Dziennik>
+  <ns:DziennikCtrl>
+    <ns:LiczbaWierszyDziennika>200</ns:LiczbaWierszyDziennika>
+    <ns:SumaKwotOperacji>1000.00</ns:SumaKwotOperacji>
+  </ns:DziennikCtrl>
+  <!--1 or more repetitions:-->
+  <ns:KontoZapis typ="G">
+    <ns:LpZapisu>200</ns:LpZapisu>
+    <ns:NrZapisu>token</ns:NrZapisu>
+    <ns:KodKontaWinien>token</ns:KodKontaWinien>
+    <ns:KwotaWinien>1000.00</ns:KwotaWinien>
+    <!--Optional:-->
+    <ns:KwotaWinienWaluta>1000.00</ns:KwotaWinienWaluta>
+    <!--Optional:-->
+    <ns:KodWalutyWinien>HUF</ns:KodWalutyWinien>
+    <!--Optional:-->
+    <ns:OpisZapisuWinien>token</ns:OpisZapisuWinien>
+    <ns:KodKontaMa>token</ns:KodKontaMa>
+    <ns:KwotaMa>1000.00</ns:KwotaMa>
+    <!--Optional:-->
+    <ns:KwotaMaWaluta>1000.00</ns:KwotaMaWaluta>
+    <!--Optional:-->
+    <ns:KodWalutyMa>MUR</ns:KodWalutyMa>
+    <!--Optional:-->
+    <ns:OpisZapisuMa>token</ns:OpisZapisuMa>
+  </ns:KontoZapis>
+  <ns:KontoZapisCtrl>
+    <ns:LiczbaWierszyKontoZapisj>200</ns:LiczbaWierszyKontoZapisj>
+    <ns:SumaWinien>1000.00</ns:SumaWinien>
+    <ns:SumaMa>1000.00</ns:SumaMa>
+  </ns:KontoZapisCtrl>
+</ns:JPK>

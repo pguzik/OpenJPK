@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InitUpload xmlns="http://e-dokumenty.mf.gov.pl">
+    <DocumentType>JPK</DocumentType>
+    <Version>01.02.01.20160617</Version>
+    <EncryptionKey algorithm="RSA" mode="ECB" padding="PKCS#1" encoding="Base64">hli8TTwUEND+Y4Ldz8quCS0zAvVwNuf1d3MSaMKeftVRsO7K/rUgiaZciTuEKb7ydrROxii0gARkGeSf3OrTsZ0fGRQxD4ZBJv437S9468X3W5VGOmPJUIKZqtMTWzYC+ZlKr3qfHy0WYBxvedqWUwwUL5MZ38MURh85eBYSA9cl5iwpFPwa1Ig7oVMZDAhDtu9nOn+9l9s9ElkclkkmMxOCrXwWnTLsRilWPLFvUZouwiGJGA/mlg7XhKysP63rHvqTmMKhOWhxSQZZphWMX/bb6Bcm+a+d0df+tT1jPHWEGc9sThkgh+R0eMUiDLm4C9VwiNjHUdTyK1z1/aJuZQ==</EncryptionKey>
+    <DocumentList>
+        <Document>
+            <FormCode systemCode="JPK_VAT (1)" schemaVersion="1-0">JPK_VAT</FormCode>
+            <FileName>JPK_VAT_2016-07-01.xml</FileName>
+            <ContentLength>1234567890</ContentLength>
+            <HashValue algorithm="SHA-256" encoding="Base64">HashXml</HashValue>
+            <FileSignatureList filesNumber="2">
+                <Packaging>
+                    <SplitZip type="split" mode="zip"/>
+                </Packaging>
+                <Encryption>
+                    <AES size="256" block="16" mode="CBC" padding="PKCS#7">
+                        <IV bytes="16" encoding="Base64">MTIzNDU2Nzg5MDEyMzQ1Ng==</IV>
+                    </AES>
+                </Encryption>
+                <FileSignature>
+                    <OrdinalNumber>1</OrdinalNumber>
+                    <FileName>JPK_VAT_2016-07-01.xml.zip.001</FileName>
+                    <ContentLength>62914560</ContentLength>
+                    <HashValue algorithm="MD5" encoding="Base64">HgwPiDOm1nI2F81KI3npYw==</HashValue>
+                </FileSignature>
+                <FileSignature>
+                    <OrdinalNumber>2</OrdinalNumber>
+                    <FileName>JPK_VAT_2016-07-01.xml.zip.002</FileName>
+                    <ContentLength>123456</ContentLength>
+                    <HashValue algorithm="MD5" encoding="Base64"> dnF5x6K/8ZZRzpfSlMMM+w==</HashValue>
+                </FileSignature>
+            </FileSignatureList>
+        </Document>
+    </DocumentList>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <ds:Reference URI="">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue>XT5th/g03u9CpJJNNPdKzYHg+sA=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>JJ1G4Ll4bnd8jE9H4gycyhp4imLvvEUqqjI8AUqdFWswvNFsJQJY3hp/8r8P7E3f3/ly8E0njEeSG7RFp0F99xmQBCjkJhJ6Ha/MmdTkioSV5ZmUn6rljlusikjAxgdGY2mW/p8IoMJRR8GllOmQdPHZuqpCc6GuLEeoxD/8GUN52FU+wIAbSnoYO5S9bpW+KO5wfEfO0k1Uo/dDfoNQlOZt5WSLqqZYq9jaiBBPOnRN/nXHa8dao961CgR/kiJcxJ+3J9iHMdfXVHt05iQv15OIpcuMS9AZePpazxVKVXmH3HfF6BqirNXWyogXje+xmK0HbnbWZCewofZb4Sn2eA==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:KeyValue>
+                <ds:RSAKeyValue>
+                    <ds:Modulus>tVEy4LmCs7znT8V0Vnzu4VnMssRoM3Yblr9RbK33GtJAwiiMFBW+e+jXPQrIhqkNHUxkdRphA/Il81UgX5BOzgULeDcDitMFVqHMcOVaeZPK5AmTJeGDvVjcZ5g8PRRaHfbP+wei7zUDt9Lt2lMccWFWSg7z7UQwPsBj83Gj6ahzgq+Pu1W7Gz5stVgeAQN3zq++XNACulxT0kgY58NlZGqCov61ksT6W/MgRx3Bo12LcWnfc1r0GhZiQfqWZXdcDPhhFosB/HgkJ8vm/0VB9Jg0dVb4fm4CPBPhNKKrxdxrHzRV8g6qd5Ro0gxfM12xT+yK8u3MDWe/MpB5Q7dZ2Q==</ds:Modulus>
+                    <ds:Exponent>AQAB</ds:Exponent>
+                </ds:RSAKeyValue>
+            </ds:KeyValue>
+            <ds:X509Data>
+                <ds:X509IssuerSerial>
+                    <ds:X509IssuerName>Issuer</ds:X509IssuerName>
+                    <ds:X509SerialNumber>2653794548579722976978876871650469926923223056</ds:X509SerialNumber>
+                </ds:X509IssuerSerial>
+                <ds:X509SubjectName>Subject</ds:X509SubjectName>
+                <ds:X509Certificate>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</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+</InitUpload>

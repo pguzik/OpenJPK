@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InitUpload xmlns="http://e-dokumenty.mf.gov.pl">
+    <DocumentType>JPK</DocumentType>
+    <Version>01.02.01.20160617</Version>
+    <EncryptionKey algorithm="RSA" mode="ECB" padding="PKCS#1" encoding="Base64">hli8TTwUEND+Y4Ldz8quCS0zAvVwNuf1d3MSaMKeftVRsO7K/rUgiaZciTuEKb7ydrROxii0gARkGeSf3OrTsZ0fGRQxD4ZBJv437S9468X3W5VGOmPJUIKZqtMTWzYC+ZlKr3qfHy0WYBxvedqWUwwUL5MZ38MURh85eBYSA9cl5iwpFPwa1Ig7oVMZDAhDtu9nOn+9l9s9ElkclkkmMxOCrXwWnTLsRilWPLFvUZouwiGJGA/mlg7XhKysP63rHvqTmMKhOWhxSQZZphWMX/bb6Bcm+a+d0df+tT1jPHWEGc9sThkgh+R0eMUiDLm4C9VwiNjHUdTyK1z1/aJuZQ==</EncryptionKey>
+    <DocumentList>
+        <Document>
+            <FormCode systemCode="JPK_VAT (1)" schemaVersion="1-0">JPK_VAT</FormCode>
+            <FileName>JPK_VAT_2016-07-01.xml</FileName>
+            <ContentLength>1234567890</ContentLength>
+            <HashValue algorithm="SHA-256" encoding="Base64">HashXml</HashValue>
+            <FileSignatureList filesNumber="2">
+                <Packaging>
+                    <SplitZip type="split" mode="zip"/>
+                </Packaging>
+                <Encryption>
+                    <AES size="256" block="16" mode="CBC" padding="PKCS#7">
+                        <IV bytes="16" encoding="Base64">MTIzNDU2Nzg5MDEyMzQ1Ng==</IV>
+                    </AES>
+                </Encryption>
+                <FileSignature>
+                    <OrdinalNumber>1</OrdinalNumber>
+                    <FileName>JPK_VAT_2016-07-01.xml.zip.001</FileName>
+                    <ContentLength>62914560</ContentLength>
+                    <HashValue algorithm="MD5" encoding="Base64">HgwPiDOm1nI2F81KI3npYw==</HashValue>
+                </FileSignature>
+                <FileSignature>
+                    <OrdinalNumber>2</OrdinalNumber>
+                    <FileName>JPK_VAT_2016-07-01.xml.zip.002</FileName>
+                    <ContentLength>123456</ContentLength>
+                    <HashValue algorithm="MD5" encoding="Base64"> dnF5x6K/8ZZRzpfSlMMM+w==</HashValue>
+                </FileSignature>
+            </FileSignatureList>
+        </Document>
+    </DocumentList>
+</InitUpload>

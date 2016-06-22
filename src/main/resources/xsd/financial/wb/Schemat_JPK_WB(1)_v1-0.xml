@@ -1,0 +1,53 @@
+<ns:JPK xmlns:ns="http://jpk.mf.gov.pl/wzor/2016/03/09/03092/" xmlns:def="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2016/01/25/eD/DefinicjeTypy/">
+  <ns:Naglowek>
+    <ns:KodFormularza kodSystemowy="JPK_WB (1)" wersjaSchemy="1-0">JPK_WB</ns:KodFormularza>
+    <ns:WariantFormularza>1</ns:WariantFormularza>
+    <ns:CelZlozenia>1</ns:CelZlozenia>
+    <ns:DataWytworzeniaJPK>2014-09-19T01:18:33</ns:DataWytworzeniaJPK>
+    <ns:DataOd>1900-01-01</ns:DataOd>
+    <ns:DataDo>1900-01-01</ns:DataDo>
+    <ns:DomyslnyKodWaluty>GWP</ns:DomyslnyKodWaluty>
+    <ns:KodUrzedu>0608</ns:KodUrzedu>
+  </ns:Naglowek>
+  <ns:Podmiot1>
+    <ns:IdentyfikatorPodmiotu>
+      <def:NIP>1234563218</def:NIP>
+      <def:PelnaNazwa>token</def:PelnaNazwa>
+      <!--Optional:-->
+      <def:REGON>23511332857188</def:REGON>
+    </ns:IdentyfikatorPodmiotu>
+    <ns:AdresPodmiotu>
+      <def:KodKraju>PL</def:KodKraju>
+      <def:Wojewodztwo>token</def:Wojewodztwo>
+      <def:Powiat>token</def:Powiat>
+      <def:Gmina>token</def:Gmina>
+      <!--Optional:-->
+      <def:Ulica>token</def:Ulica>
+      <def:NrDomu>token</def:NrDomu>
+      <!--Optional:-->
+      <def:NrLokalu>token</def:NrLokalu>
+      <def:Miejscowosc>token</def:Miejscowosc>
+      <def:KodPocztowy>token</def:KodPocztowy>
+      <def:Poczta>token</def:Poczta>
+    </ns:AdresPodmiotu>
+  </ns:Podmiot1>
+  <ns:NumerRachunku>PL12ABC1234567</ns:NumerRachunku>
+  <ns:Salda>
+    <ns:SaldoPoczatkowe>1000.00</ns:SaldoPoczatkowe>
+    <ns:SaldoKoncowe>1000.00</ns:SaldoKoncowe>
+  </ns:Salda>
+  <!--1 or more repetitions:-->
+  <ns:WyciagWiersz typ="G">
+    <ns:NumerWiersza>200</ns:NumerWiersza>
+    <ns:DataOperacji>1900-01-01</ns:DataOperacji>
+    <ns:NazwaPodmiotu>token</ns:NazwaPodmiotu>
+    <ns:OpisOperacji>token</ns:OpisOperacji>
+    <ns:KwotaOperacji>1000.00</ns:KwotaOperacji>
+    <ns:SaldoOperacji>1000.00</ns:SaldoOperacji>
+  </ns:WyciagWiersz>
+  <ns:WyciagCtrl>
+    <ns:LiczbaWierszy>200</ns:LiczbaWierszy>
+    <ns:SumaObciazen>1000.00</ns:SumaObciazen>
+    <ns:SumaUznan>1000.00</ns:SumaUznan>
+  </ns:WyciagCtrl>
+</ns:JPK>
