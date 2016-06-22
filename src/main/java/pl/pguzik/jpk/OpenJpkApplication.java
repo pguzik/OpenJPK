@@ -10,7 +10,8 @@ import java.io.File;
 @SpringBootApplication
 public class OpenJpkApplication {
 
-	public static String ROOT = "upload-dir";
+	public static String UPLOADED = "upload-dir";
+	public static String CONVERTED_TO_UTF8 = "converted-to-utf8";
 
 	public static void main(String[] args) {
 		SpringApplication.run(OpenJpkApplication.class, args);
@@ -19,7 +20,8 @@ public class OpenJpkApplication {
     @Bean
     CommandLineRunner init() {
         return (String[] args) -> {
-            new File(ROOT).mkdir();
+            new File(UPLOADED).mkdir();
+            new File(CONVERTED_TO_UTF8).mkdir();
         };
     }
 }

@@ -24,7 +24,7 @@ public class FileUploadController {
 
     @RequestMapping(method = RequestMethod.GET, value = UPLOAD_PATH)
     public String provideUploadInfo(Model model) {
-        File rootFolder = new File(OpenJpkApplication.ROOT);
+        File rootFolder = new File(OpenJpkApplication.UPLOADED);
 
         model.addAttribute("files",
                 Arrays.stream(rootFolder.listFiles())
@@ -52,7 +52,7 @@ public class FileUploadController {
         if (!file.isEmpty()) {
             try {
                 BufferedOutputStream stream = new BufferedOutputStream(
-                        new FileOutputStream(new File(OpenJpkApplication.ROOT + "/" + name)));
+                        new FileOutputStream(new File(OpenJpkApplication.UPLOADED + "/" + name)));
                 FileCopyUtils.copy(file.getInputStream(), stream);
                 stream.close();
                 redirectAttributes.addFlashAttribute("message",

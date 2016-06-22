@@ -27,7 +27,7 @@ public class XmlToUtf8Encoder {
 
             String originalXmlFileName = xmlFile.getName();
             String removeXmlEtensionFromFileName = originalXmlFileName.replaceAll(".xml", "");
-            String encodedXmlFileName = OpenJpkApplication.ROOT + "/" + removeXmlEtensionFromFileName + "asUtf8.xml";
+            String encodedXmlFileName = OpenJpkApplication.CONVERTED_TO_UTF8 + "/" + removeXmlEtensionFromFileName + "asUtf8.xml";
 
             FileOutputStream out = new FileOutputStream(encodedXmlFileName);
 
