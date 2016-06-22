@@ -42,11 +42,11 @@ public class FileUploadController {
                                    RedirectAttributes redirectAttributes) {
         if (name.contains("/")) {
             redirectAttributes.addFlashAttribute("message", "Folder separators not allowed");
-            return "redirect:/";
+            return "redirect:" + UPLOAD_PATH;
         }
         if (name.contains("/")) {
             redirectAttributes.addFlashAttribute("message", "Relative pathnames not allowed");
-            return "redirect:/";
+            return "redirect:" + UPLOAD_PATH;
         }
 
         if (!file.isEmpty()) {
@@ -68,7 +68,7 @@ public class FileUploadController {
                     "You failed to upload " + name + " because the file was empty");
         }
 
-        return "redirect:/erp/uploadFiles";
+        return "redirect:" + UPLOAD_PATH;
     }
 
 }
